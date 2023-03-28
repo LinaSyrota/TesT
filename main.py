@@ -3,6 +3,9 @@ file2 = open('file_2.txt').read()
 Same = open('same.txt', 'w')
 Diff = open('diff.txt', 'w')
 
+arr_same = []
+arr_diff = []
+
 def same(text1, text2):
     for line1 in text1:
         for line2 in text2:
