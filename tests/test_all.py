@@ -14,13 +14,7 @@ def createFiles():
 def test_diff(createFiles):
     files = createFiles
     
-    for line1 in files[0]:
-        same = False
-        for line2 in files[1]:
-            if line1 == line2:
-                same = True
-        
-        if not same:
-            diff_line = line1
+    arr = diff(files[0], files[1])
     
-    assert diff_line == '3'
+    assert arr[0] == '3'
+    
